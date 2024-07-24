@@ -9,7 +9,7 @@ from joblib import load
 def download_model():
     try:
         if not os.path.exists('diabetes.joblib'):
-            url = 'https://drive.google.com/file/d/1rcMwphsHTsDVGd-kyilwvJ7pWP98jvNw/view?usp=sharing'
+            url = 'https://drive.google.com/file/d/1rcMwphsHTsDVGd-kyilwvJ7pWP98jvNw/view?usp=drive_link'
             gdown.download(url, 'diabetes.joblib', quiet=False)
     except Exception as e:
         print(f"Failed to download the model: {e}")
