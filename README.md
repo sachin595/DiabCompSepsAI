@@ -115,7 +115,9 @@ Categorical variables were encoded to numerical representations:
 
 ### How it Works: 
 - The figure below illustrates the mechanics of the random forest algorithm. Starting with the dataset, multiple decision trees are constructed. Each tree is trained on a different subset of the data, obtained through bootstrap sampling. During the training process, a random subset of features is selected at each node, which introduces diversity among the trees. The final prediction is made by aggregating the results from all trees, either by taking the majority vote for classification tasks or the mean for regression tasks.
-  
+- 
+### Decision Tree in Random Forest
+![Decision Tree in Random Forest](decision_tree.png)
 
 ### Algorithm Selection:
 - In our study, we selected the random forest classifier after conducting a comparative analysis with other algorithms such as logistic regression, support vector machines, and neural networks. Random forests were chosen due to their ability to handle complex interactions, provide feature importance metrics, and resist overfitting. They also performed best in terms of accuracy, precision, and recall for predicting postoperative complications like wound infection and sepsis.
@@ -123,6 +125,9 @@ Categorical variables were encoded to numerical representations:
 ### Random Forest Mechanics:
  A random forest classifier addresses the overfitting problem by constructing multiple decision trees during training and outputting the mode of the classes (classification). The key steps involved in building a random forest model are as follows:
 
+### Core Processes in Random Forest Model Development
+
+![Core Process](core_process.png)
 
 
  - **1.	Bootstrap Sampling:** For each tree in the forest, a random sample is drawn with replacement from the training dataset. This process, known as bootstrap sampling, ensures that each tree is trained on a different subset of data.
@@ -141,16 +146,26 @@ The predictive model achieved:
 - **Recall:** 94% for wound infection, 94.8% for sepsis.
 - **F1-Score:** 93.4% for wound infection, 94.3% for sepsis.
 
+### Performance Metrics by Target Variable
+
+![Metrics](metrics.png)
 
 ### Receiver Operating Characteristic (ROC) Curve
 - ROC-AUC for Wound Infection: 0.92
 - ROC-AUC for Sepsis: 0.95
+
+### ROC-AUC Curves for Wound Infection and Sepsis Prediction
+
+![ROC-AUC Curves](roc.png)
 
 ---
 
 ## Feature Importance Analysis
 
 ### Feature Importance
+
+![Feature Importance](feature_imp.png)
+
 The feature importance diagram provides insights into which variables most significantly influence the model's predictions for postoperative complications. Here's a detailed explanation of the top features:
 - 	**Operation Time (optime):** This is the most influential feature, indicating that longer surgical durations may increase the risk of complications. It suggests that minimizing operation time could be crucial in reducing postoperative risks.
 -	**Weight:** Patient weight is a critical factor, likely due to its association with various health conditions that can affect recovery and complication rates.
@@ -194,6 +209,8 @@ The DiabCompSepsAI application is designed to predict postoperative complication
 2. **Enter Data:** Input patient data using provided fields.
 3. **Submit Data:** Once all fields are completed, click the **'Predict'** button.
 4. **Interpreting Results:** The interface displays the **prediction results**, indicating the presence or absence of postoperative complications. This immediate feedback allows healthcare providers to make informed decisions quickly.
+
+![Preview](sample_output.png)
 
 ---
 
