@@ -69,7 +69,10 @@ The 22 features used for training the model were:
 ### Feature Selection
 Features were selected based on clinical relevance and potential to predict postoperative complications. Categories include demographics, clinical markers, surgical details, patient history, laboratory values, and other clinical factors.The careful selection of these features ensured that the model was trained on the most pertinent and informative variables, thereby improving its accuracy and reliability in predicting postoperative outcomes.
 
-image
+### Hexagonal Visualization of Patient Data Categories
+
+![Hexagonal Visualization of Patient Data Categories](data_categories.png)
+
 
 <div align="center">
     <p>◆ Demographics: sex, age</p>
@@ -85,6 +88,8 @@ The primary outcomes of interest in this study were the presence of wound infect
 
 ---
 ## Workflow
+
+![Workflow Diagram](workflow.png)
 
 ---
 
