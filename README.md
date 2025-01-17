@@ -13,6 +13,8 @@
     - [Data Collection](#data-collection)
     - [Features](#features)
     - [Feature Selection](#feature-selection)
+    - [Target Variables](#target-variables)
+3. [Workflow](#workflow)
 3. [Data Preprocessing](#data-preprocessing)
     - [Encoding Categorical Variables](#encoding-categorical-variables)
 4. [Model Development](#model-development)
@@ -20,16 +22,16 @@
     - [Algorithm Selection](#algorithm-selection)
 5. [Results](#results)
     - [Model Performance](#model-performance)
-    - [Validation Results](#validation-results)
     - [Receiver Operating Characteristic (ROC) Curve](#receiver-operating-characteristic-roc-curve)
 6. [Feature Importance Analysis](#feature-importance-analysis)
-    - [Demographic Influence](#demographic-influence)
-7. [Interface Implementation & Usage Guide](#interface-implementation--usage-guide)
+    - [Feature Importance](#feature-importance)
+    - [Demographic Influence](#demographic-influence)    
+8. [Interface Implementation & Usage Guide for Diagnostic Tool](#interface-implementation--usage-guide-for-diagnostic-tool)
     - [Technology Stack](#technology-stack)
     - [Model Integration](#model-integration)
     - [User Instructions](#user-instructions)
-8. [Model Selection Rationale](#model-selection-rationale)
-9. [Conclusion](#conclusion)
+9. [Model Selection Rationale](#model-selection-rationale)
+10. [Conclusion](#conclusion)
 
 ---
 
@@ -187,7 +189,7 @@ Demographic factors such as age and sex were analyzed to understand their influe
 
 ---
 
-## Interface Implementation & Usage Guide
+## Interface Implementation & Usage Guide for Diagnostic Tool
 
 The DiabCompSepsAI application is designed to predict postoperative complications in diabetic patients, leveraging a machine learning model integrated into a user-friendly interface.
 
