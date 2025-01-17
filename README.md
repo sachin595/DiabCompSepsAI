@@ -89,7 +89,7 @@ The primary outcomes of interest in this study were the presence of wound infect
 ---
 ## Workflow
 
-![Workflow Diagram](workflow.png)
+![Workflow Diagram](workflow.jpg)
 
 ---
 
@@ -115,6 +115,7 @@ Categorical variables were encoded to numerical representations:
 
 ### How it Works: 
 - The figure below illustrates the mechanics of the random forest algorithm. Starting with the dataset, multiple decision trees are constructed. Each tree is trained on a different subset of the data, obtained through bootstrap sampling. During the training process, a random subset of features is selected at each node, which introduces diversity among the trees. The final prediction is made by aggregating the results from all trees, either by taking the majority vote for classification tasks or the mean for regression tasks.
+  
 
 ### Algorithm Selection:
 - In our study, we selected the random forest classifier after conducting a comparative analysis with other algorithms such as logistic regression, support vector machines, and neural networks. Random forests were chosen due to their ability to handle complex interactions, provide feature importance metrics, and resist overfitting. They also performed best in terms of accuracy, precision, and recall for predicting postoperative complications like wound infection and sepsis.
