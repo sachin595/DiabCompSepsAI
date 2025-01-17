@@ -1,8 +1,11 @@
 # DiabCompSepsAI: Predictive Model for Postoperative Complications in Diabetic Patients
-
-[![Research - Medical AI](https://img.shields.io/badge/Research-Medical%20AI-blue)](https://github.com/your-repo)
-[![Libraries Used](https://img.shields.io/badge/Libraries-NumPy%2C%20Pandas%2C%20Joblib-green)](https://github.com/your-repo)
 [![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://diabcompsepsai.streamlit.app/)
+
+![Research Diabetes AI](https://img.shields.io/badge/Research-Medical%20AI-green.svg)
+![Python](https://img.shields.io/badge/Python-3.8+-blue)
+![Libraries Used](https://img.shields.io/badge/Libraries-NumPy%2C%20Pandas%2C%20Scikit--Learn%2C%20Matplotlib-yellow)
+![Algorithm](https://img.shields.io/badge/Algorithm-Random%20Forest%20Classifier-red)
+
 
 ## Table of Contents
 1. [Abstract](#abstract)
