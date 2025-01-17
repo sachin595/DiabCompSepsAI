@@ -165,18 +165,29 @@ Demographic factors such as age and sex were analyzed to understand their influe
 
 ## Interface Implementation & Usage Guide
 
+The DiabCompSepsAI application is designed to predict postoperative complications in diabetic patients, leveraging a machine learning model integrated into a user-friendly interface.
+
 ### Technology Stack
 - **Streamlit:** Interactive web application.
 - **Python Libraries:** Pandas, NumPy, Joblib.
 
 ### Model Integration
-- **Loading the Model:** Pre-trained model loaded as a Joblib file.
-- **User Input:** Drop-down menus and input fields for categorical and numerical variables.
+- **Loading the Model:** The predictive model, saved as a Joblib file, is downloaded and loaded into the application. This ensures the model is readily available for making predictions whenever user input is provided.
+- **User Input:**
+    - Categorical Inputs: Drop-down menus are provided for categorical variables like sex, inpatient/outpatient status, and surgical specialty. These inputs are mapped to numerical values using predefined dictionaries.
+    - Numerical Inputs: Direct input fields are used for continuous variables such as age, height, weight, and operation time.
+  
+  ### Prediction Process:
+- Once the user submits the form, the application processes the inputs, converts them to the required numerical format, and feeds them into the model.
+- The model outputs predictions for the likelihood of sepsis and wound infection, which are then decoded into user-friendly messages.
+
+
 
 ### User Instructions
 1. **Access the Interface:** [DiabCompSepsAI Application](https://diabcompsepsai.streamlit.app/)
 2. **Enter Data:** Input patient data using provided fields.
-3. **Submit Data:** Click 'Predict' for real-time results.
+3. **Submit Data:** Once all fields are completed, click the **'Predict'** button.
+4. **Interpreting Results:** The interface displays the **prediction results**, indicating the presence or absence of postoperative complications. This immediate feedback allows healthcare providers to make informed decisions quickly.
 
 ---
 
