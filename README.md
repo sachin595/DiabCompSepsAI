@@ -120,7 +120,7 @@ Categorical variables were encoded to numerical representations:
 
 ### How it Works: 
 - The figure below illustrates the mechanics of the random forest algorithm. Starting with the dataset, multiple decision trees are constructed. Each tree is trained on a different subset of the data, obtained through bootstrap sampling. During the training process, a random subset of features is selected at each node, which introduces diversity among the trees. The final prediction is made by aggregating the results from all trees, either by taking the majority vote for classification tasks or the mean for regression tasks.
-- 
+  
 ### Decision Tree in Random Forest
 ![Decision Tree in Random Forest](decision_tree.png)
 
